@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&family=Syne:wght@400;500;600;700;800&display=swap');
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(sisiman.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+.box{
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 100px;
+    border-radius: 20px;
+    box-shadow: 0 0 128px black, 0 32px 64px -48px black;
+}
+.form-box{
+    width: 450px;
+    margin: 0px 10px;
+}
+.form-box header{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.form-box form .feild{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.form-box form .input input{
+    height: 25px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+.btn{
+    height: 30px;
+    background-color: greenyellow;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 25px;
+    border: 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.submit{
+    width: 100%;
+}
+.links{
+    margin-bottom: 15px;
+    font-size: 13px;
+    text-align: center;
+
+}
+
+
+/************************Home************************/
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    font-weight: 900;
+}
+.right-links {
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    padding: 400px;
+    font-weight: bold;
+}
+
+.right-links p{
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}
+
+.right-links .btn{
+    color: black;
+    font-weight: bold;
+}
+
+.main-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    flex-direction: column;
+    width: 50%;
+}
+.top{
+    padding-bottom: 10px;
+    font-display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.bottom{
+    width: 100%;
+    margin-top: 0px;
+}
+
+.logo-edit a{
+    padding: 20px;
+    color: rgb(253, 122, 0);
+    text-align: center;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.logo-edit p{
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+} 
+.right-links-edit{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.btn-edit{
+    height: 50px;
+    background-color: greenyellow;
+    width: 10%;
+    margin-top: 25px;
+    border-radius: 25px;
+    border: 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width: 768px){
+    .main-box .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top .box{
+        margin: 10px 10px;
+    }
+    .bottom{
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    
+    .links{
+        padding: 5px;
+        font-size: 11px;
+    }
+    .right-links-edit .btn-edit{
+        margin-top: 10px;
+        width: 120px;
+        line-height: 30px;
+        font-size: 12px;
+        padding-left: 0 10px;
+        font-weight: bold;
+        
+    }
+
+}
